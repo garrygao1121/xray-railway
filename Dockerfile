@@ -10,5 +10,6 @@ RUN apk add --no-cache ca-certificates curl unzip \
  && /usr/local/bin/xray version
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
+EXPOSE 8080
 ENTRYPOINT ["/entrypoint.sh"]
 
